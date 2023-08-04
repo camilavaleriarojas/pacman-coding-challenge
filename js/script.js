@@ -46,9 +46,6 @@ function checkCollision(elementOne, elementTwo) {
   var pacmanPosition = elementOne.getBoundingClientRect();
   var ghostPosition = elementTwo.getBoundingClientRect();
 
-  console.log(pacmanPosition.right);
-  console.log(ghostPosition.right);
-
   return (
     pacmanPosition.left < ghostPosition.right &&
     pacmanPosition.right > ghostPosition.left &&
